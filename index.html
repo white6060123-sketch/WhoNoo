@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset= "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             apk.web
         </title>
@@ -230,6 +230,22 @@ border-left-color:blue;
   background-color: red;
   border-radius:1000px ;
 }
+            /* This code only runs when the screen is smaller than 768px (phones) */
+@media (max-width: 768px) {
+  .container { 
+    display: block; /* Changes from side-by-side to stacked */
+  }
+  
+  .left-box, .right-box {
+    width: 100%;    /* Makes boxes take up the full width of the phone */
+    margin: 10px 0; /* Adds spacing between the stacked boxes */
+  }
+
+  h1 {
+    font-size: 2rem; /* Makes the "Welcome" text bigger and easier to read */
+  }
+}
+            
         </style>
          <div class="topnav">
             <a class="active" href="#Song">Dicover</a>
